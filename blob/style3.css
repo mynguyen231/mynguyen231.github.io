@@ -1,0 +1,1090 @@
+/*GLOBAL*/
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+   width: 0;
+   height: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px!important;
+  background-color: #EFF1FE!important;
+}
+
+body p {
+  font-size: 1.5rem;
+  font-family: "Nunito";
+}
+
+body h1 {
+  font-size: 3.5rem;
+  font-family: "Nunito";
+  font-weight: 700;
+}
+
+body h2 {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #145FFF;
+  margin-bottom: 70px;
+  margin-top: 90px;
+  background: linear-gradient(90deg, #145FFF, #7B7BFF, #145FFF);
+  letter-spacing: 3px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -300%;
+  }
+  100% {
+    background-position-x: 300%;
+  }
+}
+
+body h3 {
+  font-family: "Nunito";
+  font-size: 2rem;
+}
+
+image {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1050px!important;
+  margin: 0 auto;
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+}
+
+/*PRESENTATION*/
+/*#presentation {
+  background: url("photos/Background-02.png") no-repeat center center;
+  background-size: cover;
+  padding: 115px 0px;
+  text-align: center;
+}*/
+
+/*Scrolling*/
+.header {
+   background-image: url("photos/Background-02.png");
+   background-size: cover;
+   background-position: center center;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+}
+#header-inner {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 15px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+
+ .intersection {
+   margin-top: 100vh;
+   background-color: #EFF1FE;
+   position: relative;
+   z-index: 1;
+}
+
+/*BLOB TEXT*/
+#text-gradient {
+  background: #36CFFF;
+background: linear-gradient(to bottom left, #00FFAB 20%, #145FFF 85%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 17rem;
+  font-family: "Nunito";
+  margin: 0px!important;
+  font-weight: 700;
+}
+
+/*BOX ANIMATION*/
+.boxes-animation {
+  position: absolute;
+  top: 200px;
+  left: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  background: black;
+  filter: blur(5px) contrast(18);
+  mix-blend-mode: screen;
+}
+ .box-animation {
+   width: 70px;
+   height: 70px;
+   border-radius: 100%;
+   background: #36CFFF;
+}
+ .box-animation:nth-child(odd) {
+   animation: spinLeft 2.5s 0.2s linear both infinite;
+}
+ .box-animation:nth-child(even) {
+   animation: spinRight 1s 0.4s linear both infinite;
+}
+ .box-animation:nth-child(2n) {
+   animation: pulse 2s ease-in-out 0.1s infinite;
+}
+ .box-animation:nth-child(4n) {
+   animation-direction: reverse;
+}
+ @keyframes pulse {
+   50% {
+     transform: scale(1.8);
+  }
+   70% {
+     transform: scale(0.6);
+  }
+}
+ @keyframes spinLeft {
+   from {
+     transform: rotate(0deg) translate(50px);
+  }
+   to {
+     transform: rotate(360deg) translate(50px);
+  }
+}
+ @keyframes spinRight {
+   from {
+     transform: rotate(360deg) translate(50px);
+  }
+   to {
+     transform: rotate(0deg) translate(50px);
+  }
+}
+
+
+/*SCROLL*/
+ .mouse {
+   max-width: 4rem;
+   width: 100%;
+   height: auto;
+}
+ .scroll {
+   animation-name: scroll;
+   animation-duration: 1.5s;
+   animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+   animation-iteration-count: infinite;
+   transform-origin: 50% 20.5px;
+   will-change: transform, opacity;
+   opacity: 2;
+}
+ .scroll-link {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 2rem;
+}
+ @keyframes scroll {
+   0%, 20% {
+     transform: translateY(0) scaleY(1);
+  }
+   100% {
+     transform: translateY(36px) scaleY(2);
+     opacity: 0;
+  }
+}
+
+/*Animation Bulle*/
+/*.wrapper {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   filter: url('#filter');
+}
+
+ .ball {
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   top: 200px;
+   left: 400px;
+}
+
+ .ball:before {
+   background: #36CFFF;
+   border-radius: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   content: '';
+}
+ .ball:nth-child(1) {
+   transform: translate(-66px);
+   animation: x-axis-lateral 2s infinite alternate ease-in-out;
+}
+ .ball:nth-child(1):before {
+   animation: y-axis-lateral 1s infinite 0.1s alternate ease-in-out;
+}
+ .ball:nth-child(2) {
+   animation: x-axis 2s infinite alternate ease-in-out;
+}
+ .ball:nth-child(2):before {
+   animation: y-axis 1s infinite 0.5s alternate ease-in-out;
+}
+ .ball:nth-child(3) {
+   transform: translate(66px, 78px);
+   animation: x-axis-lateral 2s infinite alternate ease;
+}
+ .ball:nth-child(3):before {
+   animation: y-axis-lateral 1s infinite 0.4s alternate ease-in-out;
+}
+ @keyframes x-axis {
+   0% {
+     transform: translate(-96px);
+  }
+   100% {
+     transform: translate(96px);
+  }
+}
+ @keyframes y-axis {
+   0% {
+     transform: translateY(42px);
+  }
+   100% {
+     transform: translateY(-66px) scale(0.8);
+     background: #36CFFF;
+  }
+}
+ @keyframes x-axis-lateral {
+   0% {
+     transform: translate(-36px);
+  }
+   100% {
+     transform: translate(36px);
+  }
+}
+ @keyframes y-axis-lateral {
+   0% {
+     transform: translateY(12px);
+  }
+   100% {
+     transform: translateY(-60px);
+     background: #36CFFF;
+  }
+}*/
+
+/*COUVERTURE*/
+#couverture {
+  background-color: white;
+}
+#logo {
+  width: 50%;
+  padding-top: 20px;
+ }
+
+#image-couverture {
+  width:  100%;
+}
+
+/*NAV*/
+#navigator nav{
+  float: right;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+#navigator nav a {
+  color: #000000;
+  padding: 0px 15px;
+  font-family: "Nunito";
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#navigator a:hover {
+  color: #145FFF;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #145FFF;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(55px);
+  transform: translateX(55px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#navigator a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(55px);
+  transform: translateX(55px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#navigator a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(185px);
+  transform: translateX(185px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#navigator a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(305px);
+  transform: translateX(305px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#navigator a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(400px);
+  transform: translateX(400px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#text-et-image {
+  margin-top: 50px;
+}
+
+#paragraph {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*MENU BURGER*/
+#nav-mobile-collapse {
+  display: none;
+}
+
+#nav-collapse {
+  display:  none;
+  font-size: 20pt;
+}
+
+#nav-collapse a {
+  color: black;
+}
+
+#nav-mobile a {
+  color:  black;
+}
+
+/*Button*/
+#button-creer {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 2px solid #145FFF;
+  font-size: 1.5rem;
+  font-family: "Nunito";
+  background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
+  color: #145FFF;
+  background-color: transparent;
+  transition: 3s ease;
+  background-repeat: repeat-x;
+  background-position: 0 -50%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+#button-creer:hover {
+  background-position: 500% 100%;
+  color: #FFF;
+}
+
+/*H1*/
+h1 span {
+background: linear-gradient(-45deg, #145FFF, #36CFFF, #B7B7FF, #00FFAB);
+/*background: linear-gradient(to bottom left, #00FFAB 20%, #145FFF 85%);*/
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 5rem;
+animation: animated_text 3s ease-in-out infinite;
+  -moz-animation: animated_text 3s ease-in-out infinite;
+  -webkit-animation: animated_text 3s ease-in-out infinite;
+background-size: 300%;
+font-weight: 700;
+}
+
+@keyframes animated_text {
+  0% { background-position: 0px 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0px 50%; }
+}
+
+/*ETAPES*/
+.hide-etape {
+  display: none;
+}
+
+#text-et-image {
+  margin-top: 100px;
+}
+
+#etapes {
+  margin-top: 50px;
+}
+
+#line {
+  width: 30%;
+}
+
+/*Les cercles*/
+.cercle-line {
+  width: 13%;
+  margin: 13px 0px;
+}
+
+.cercle-petit {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.cercle-petit:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.cercle-petit.effect {
+    background: #36CFFF;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+.cercle-petit.effect:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 1px #36CFFF;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+.cercle-petit.effect:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*border radius animation*/
+.shape {
+   background: linear-gradient(45deg, #00FFAB 20%, #36CFFF 50%, #145FFF 100%);
+   animation: morph 4s ease-in-out infinite;
+   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   height: 280px;
+   transition: all 1s ease-in-out;
+   width: 250px;
+   z-index: 5;
+   margin-left: -150px;
+}
+
+@keyframes morph {
+   0% {
+     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+     background: linear-gradient(45deg, #00FFAB 20%, #36CFFF 50%, #145FFF 100%);
+  }
+   50% {
+     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+     background: linear-gradient(45deg, #36CFFF 20%, #145FFF 80%, #592BFF 100%);
+  }
+   100% {
+     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+     background: linear-gradient(45deg, #00FFAB 20%, #36CFFF 50%, #145FFF 100%);
+  }
+}
+
+/*neumorphism*/
+.neumorphism {
+   /*box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);*/
+   box-shadow: -4px -2px 4px 0px #fff, 4px 2px 6px 0px rgba(163, 177, 198, 0.6);
+}
+
+.card-w .card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 40px 30px;
+   position: relative;
+   background: transparent;
+   border-radius: 20px;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-w .card .card__text {
+   text-align: center;
+}
+
+/*avantage*/
+#avantages {
+  background: url(photos/background-13.png) no-repeat center center;
+  background-size: cover;
+  padding: 160px 0px;
+  margin-top: 30px;
+  color: white;
+}
+.illustration-avantage {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+#h2-avantage {
+  margin-top: 0px !important;
+  margin-bottom: 100px !important;
+}
+
+/*BIENS*/
+#left, #right {
+  color: #36CFFF;
+  font-size: 2rem;
+}
+
+#left {
+  margin-right: 50px;
+}
+
+#right {
+  margin-left: 50px;
+}
+
+#illustration-bien {
+  width: 300%;
+  margin-left: 1020px;
+  margin-top: -1120px;
+  animation: floater 1.5s infinite;
+  transition: ease 0.5s;
+  animation-name: floater;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floater {
+  0%{transform: translateY(-10%);transition: ease 0.5s;}
+  50%{transform: translateY(10%);transition: ease 0.5s;}
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 60px); }
+  100%   { transform: translate(0, -0px); }
+}
+
+.photo-bien {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.neumorphism-2 {
+  box-shadow: -4px -2px 4px 0px #fff, 4px 2px 6px 0px rgba(163, 177, 198, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0px 15px;
+  background-color: #EFF1FE;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.neumorphism-2:hover {
+  /*box-shadow: inset -4px -2px 4px 0px #fff, inset 4px 2px 6px 0px rgba(163, 177, 198, 0.6);*/
+  transform: scale(1.05);
+}
+
+.neumorphism-2 p {
+  text-align: center;
+}
+
+.prix {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.taux {
+  color: #36CFFF;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#carousel-mobile {
+  display: none;
+}
+
+/*bordure*/
+#boxes .box {
+  width: 400px;
+  height: 200px;
+}
+
+#boxes .box:before {
+  transition: all 0.4s;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  left: 50%;
+  margin-left: -50%;
+  top: 25%;
+  border-color: rgba(200, 200, 200, 0);
+  border-style: solid;
+  border-width: 0 1px;
+}
+
+#boxes .box:after {
+  transition: all 0.4s;
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  margin-left: -25%;
+  top: 0;
+  border-color: rgba(200, 200, 200, 0);
+  border-style: solid;
+  border-width: 1px 0;
+}
+
+#boxes .box:hover:after {
+  width: 270px;
+  margin-left: -50%;
+  border-color: #00FFAB;
+}
+
+#boxes .box:hover:before {
+  height: 200px;
+  top: 0%;
+  border-color: #00FFAB;
+}
+
+/*AVIS*/
+/*#avis {
+  /*background: url(photos/wave-02.svg);
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 100px 0px;
+}*/
+
+.icon-avis i {
+  padding: 0px 5px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #145FFF;
+}
+
+#arrow {
+  margin-top: 30px;
+}
+
+#left-arrow, #right-arrow {
+  color: #592BFF;
+  font-size: 2rem;
+}
+
+.neumorphism-3 {
+  box-shadow: -4px -2px 4px 0px #fff, 4px 2px 6px 0px rgba(163, 177, 198, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0px 15px;
+  background-color: #EFF1FE;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.shape-avis {
+  background: linear-gradient(45deg, #7B7BFF 20%, #7B7BFF 50%, #7B7BFF 100%);
+  animation: morph-avis 4s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  height: 220px;
+  transition: all 1s ease-in-out;
+  width: 220px;
+  z-index: -1;
+  margin-left: 200px;
+  margin-top: -200px;
+  position: relative;
+}
+
+@keyframes morph-avis {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: linear-gradient(45deg, #00FFAB 20%, #36CFFF 50%, #7B7BFF 100%);
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background: linear-gradient(45deg, #36CFFF 80%, #7B7BFF 100%);
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: linear-gradient(45deg, #145FFF 20%, #592BFF 50%, #36CFFF 100%);
+  }
+}
+
+.shape-avis-02 {
+   background: linear-gradient(45deg, #7B7BFF 20%, #7B7BFF 50%, #7B7BFF 100%);
+   animation: morph-avis-02 4s ease-in-out infinite;
+   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   height: 180px;
+   transition: all 1s ease-in-out;
+   width: 180px;
+   z-index: -1;
+   margin-left: 650px;
+   margin-top: -320px;
+   position: relative;
+}
+
+@keyframes morph-avis-02 {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;;
+    background: linear-gradient(45deg, #145FFF 20%, #592BFF 50%, #36CFFF 100%);
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background: linear-gradient(45deg, #00FFAB 20%, #36CFFF 50%, #7B7BFF 100%);
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: linear-gradient(45deg, #36CFFF 80%, #7B7BFF 100%);
+  }
+}
+
+/*PARTENAIRES*/
+#h2-partenaire {
+  margin-bottom: 40px!important;
+}
+.illustration-right, .illustration-left {
+  width: 20%;
+}
+
+.illustration-left {
+  margin-left: -90px;
+  margin-top: -70px;
+  animation: floater 1.5s infinite;
+  transition: ease 0.5s;
+  animation-name: floater;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+  z-index: -1;
+}
+
+@keyframes floater {
+  0%{transform: translateY(-10%);transition: ease 0.5s;}
+  50%{transform: translateY(10%);transition: ease 0.5s;}
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 60px); }
+  100%   { transform: translate(0, -0px); }
+}
+
+.illustration-right {
+  margin-left: 950px;
+  animation: floater 1.5s infinite;
+  transition: ease 0.5s;
+  animation-name: floater;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+  z-index: -1;
+}
+
+.rectangle {
+  box-shadow: -4px -2px 4px 0px #fff, 4px 2px 6px 0px rgba(163, 177, 198, 0.6);
+  background-color: #EFF1FE;
+  padding: 15px 0px!important;
+  border-radius: 20px;
+}
+
+.rectangle p {
+  margin:  0 !important;
+}
+
+.ligne {
+  margin-bottom: 15px;
+}
+
+/*FOOTER*/
+.hide-desktop {
+  display: none;
+}
+
+footer .container {
+  padding-top: 180px;
+}
+
+footer img {
+  width: 5%;
+}
+
+/*footer {
+  background: url(photos/background-footer.png);
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 30px;
+  color: #FFFFFF;
+}*/
+
+footer a {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-family: "Nunito";
+}
+
+#footer-icon i {
+  font-size: 1.5rem;
+  color: #00FFAB;
+  padding: 0px 15px;
+}
+
+footer p {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+}
+
+footer input {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+footer button {
+  border: none;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 5px 7px;
+  border-radius: 3px;
+}
+
+footer {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   min-height: 310px;
+   background-color: #145FFF;
+   font-family: "Nunito";
+   overflow: hidden;
+}
+ footer:before, footer:after {
+   content: "";
+   position: absolute;
+   left: 50%;
+   min-width: 300vw;
+   min-height: 300vw;
+   background-color: #EFF1FE;
+   animation-name: rotate;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+ footer:before {
+   bottom: 22vh;
+   border-radius: 45%;
+   animation-duration: 10s;
+}
+ footer:after {
+   bottom: 18vh;
+   opacity: 0.5;
+   border-radius: 47%;
+   animation-duration: 10s;
+}
+ @keyframes rotate {
+   0% {
+     transform: translate(-50%, 0) rotateZ(0deg);
+  }
+   50% {
+     transform: translate(-50%, -2%) rotateZ(180deg);
+  }
+   100% {
+     transform: translate(-50%, 0%) rotateZ(360deg);
+  }
+}
+
+  #hide-1, #hide-2, #hide-3, #hide-4, #hide-5, #hide-6 {
+    display: none;
+  }
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+
+  main {
+    padding: 0px 20px;
+  }
+
+  .row {
+    margin: 0 !important;
+  }
+  /*HEADER*/
+  .boxes-animation {
+  top: 200px;
+  left: 100px;
+  }
+
+  /*NAV*/
+  #navigator {
+    display: none;
+  }
+
+  #nav-collapse {
+    display: block;
+    position: relative;
+    left:  250px;
+    top:  15px;
+  }
+
+  #nav-mobile-collapse {
+    background-color: #FFFFFF;
+    position: relative;
+    top: 20px;
+    left: 80px;
+    line-height: 20px;
+    z-index: 1;
+  }
+
+  #nav-mobile-collapse a {
+    color: black;
+  }
+
+  #nav-mobile-collapse a:hover {
+    text-decoration-line: none;
+    color: #145FFF;
+  }
+
+  /*COUVERTURE*/
+  body h1 {
+    margin-top: 40px;
+  }
+
+  /*BIENS*/
+  #illustration-bien {
+  width: 50%;
+  margin-left: 0px;
+  }
+
+  #hide-illustration-bien {
+    display: none;
+  }
+
+  #boxes .box:after {
+    display: none;
+  }
+
+  #boxes .box:hover:before {
+    display: none;
+  }
+
+  #carousel-desktop {
+    display: none;
+  }
+
+  #carousel-mobile {
+    display: block;
+  }
+
+  /*ETAPES*/
+  .shape {
+    height: 150px;
+    width: 120px;
+    margin-left: -50px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .hide-etape {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /*AVANTAGES*/
+  #avantages {
+    padding-top: 150px;
+    margin-top: 0px;
+    padding-bottom: 120px;
+  }
+
+  .illustration-avantage {
+  width: 20%;
+  margin-top: 0px;
+  }
+
+  /*PARTENAIRES*/
+  .illustration-left {
+  margin-left: 0px;
+  }
+
+  .illustration-right {
+    margin-left: 280px;
+  }
+
+  .show-mobile {
+    display: block;
+    margin: 10px 0px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  footer .container {
+  padding-top: 280px;
+  }
+
+  footer {
+  font-size: 1.5rem;
+  }
+
+  footer a {
+  font-size: 1.5rem;
+  }
+
+  footer img {
+  margin-bottom: 10px;
+  }
+}

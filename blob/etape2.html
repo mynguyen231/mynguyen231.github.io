@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BLOB</title>
+
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!--Icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="style3.css" />
+  <script src="script.js"></script>
+
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+  </header>
+  <div id="header-inner">
+    <p id="text-gradient">blob.</p>
+      <div class="boxes-animation">
+        <div class="box-animation"></div>
+        <div class="box-animation"></div>
+        <div class="box-animation"></div>
+      </div>
+
+    <div>
+      <a class="scroll-link hide" href="#">
+        <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+          <g fill="none" fill-rule="evenodd">
+            <rect width="70" height="118" x="1.5" y="1.5" stroke="#36CFFF" stroke-width="3" rx="36"/>
+            <circle class="scroll" cx="36.5" cy="31.5" r="6" fill="#00FFAB"/>
+          </g>
+        </svg>
+      </a>
+    </div>
+
+    <!--<div class="wrapper">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+    </div>
+    <svg>
+      <defs>
+        <filter id="filter">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+          <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+        </filter>
+      </defs>
+    </svg>-->
+  </div>
+
+<div class="intersection">
+  <div class="main-content toggle-class">
+  <main>
+    <section id="couverture">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <a href="index.html"><img id="logo" src="photos/Bleu-03.png" alt="logo de BLOB"></a>
+          </div>
+
+          <div id="navigator" class="col-10">
+            <nav>
+              <a href="index.html">Nos étapes</a>
+              <a href="#">Nos avantages</a>
+              <a href="#">Nos biens</a>
+              <a href="#">Nos partenaires</a>
+              <a href="#">CONNEXION</a>
+              <div class="dot"></div>
+            </nav>
+          </div>
+
+          <div id="nav-mobile" class="col-2">
+            <div id="nav-collapse">
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+              </a>
+            </div>
+
+            <nav id="nav-mobile-collapse">
+              <a href="#">Etapes</a>
+              <a href="#">Avantages</a>
+              <a href="#">Biens</a>
+              <a href="#">Partenaires</a>
+              <a href="#">CONNEXION</a>
+            </nav>
+          </div>
+        </div>
+
+        <div id="text-et-image" class="row">
+          <div class="col-sm-6">
+            <h1>L'investissement immobilier<span> PLUS RENTABLE</span></h1>
+            <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Suspendisse nec arcu vitae arcu rhoncus feugiat ultrices ut eros. Suspendisse nec lectus interdum, tempus enim non, tempor ipsum.</p>
+            <button id="button-creer" type="submit" name="button">Créer un compte</button>
+          </div>
+
+          <div class="col-sm-6 text-right">
+            <img id="image-couverture" src="photos/Image-couverture.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="etapes">
+      <div class="container">
+        <h2>&mdash; Comment ça marche? &mdash;</h2>
+        <div class="row">
+          <div id="float-area" class="col-sm-3 align-self-center">
+            <div class="shape"></div>
+          </div>
+
+          <div id="etape" class="card-w col-sm-5 align-self-center">
+            <div class="card neumorphism">
+              <div class="card__text">
+                <h3>Etape 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Suspendisse nec arcu vitae arcu rhoncus feugiat ultrices ut eros. Quisque in sem sed risus auctor iaculis.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="etape" class="card-w col-sm-5 align-self-center hide-etape">
+            <div class="card neumorphism">
+              <div class="card__text">
+                <h3>Etape 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Suspendisse nec arcu vitae arcu rhoncus feugiat ultrices ut eros. Quisque in sem sed risus auctor iaculis.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="etape" class="card-w col-sm-5 align-self-center hide-etape">
+            <div class="card neumorphism">
+              <div class="card__text">
+                <h3>Etape 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Suspendisse nec arcu vitae arcu rhoncus feugiat ultrices ut eros. Quisque in sem sed risus auctor iaculis.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="etape" class="card-w col-sm-5 align-self-center hide-etape">
+            <div class="card neumorphism">
+              <div class="card__text">
+                <h3>Etape 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Suspendisse nec arcu vitae arcu rhoncus feugiat ultrices ut eros. Quisque in sem sed risus auctor iaculis.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 hide">
+            <div class="row justify-content-center"><a href="index.html#etapes" class="cercle-petit effect"></a></div>
+            <div class="row justify-content-center"><img class="cercle-line" src="photos/Cercle-line.png"></div>
+            <div class="row justify-content-center"><a href="#etapes" class="cercle-petit effect"></a></div>
+            <div class="row justify-content-center"><img class="cercle-line" src="photos/Cercle-line.png"></div>
+            <div class="row justify-content-center"><a href="etape3.html#etapes" class="cercle-petit effect"></a></div>
+            <div class="row justify-content-center"><img class="cercle-line" src="photos/Cercle-line.png"></div>
+            <div class="row justify-content-center"><a href="etape4.html#etapes" class="cercle-petit effect"></a></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="avantages">
+      <div class="container ">
+        <h2 id="h2-avantage">&mdash; Nos avantages &mdash;</h2>
+        <div id="boxes" class="row justify-content-around">
+
+          <div class="col-sm-3 article box">
+            <img class="illustration-avantage" src="photos/Icon-bleu-01.png">
+            <h4>LOREM IPSUM</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis.</p>
+          </div>
+
+          <div class="col-sm-3 article box">
+            <img class="illustration-avantage" src="photos/Icon-bleu-02.png">
+            <h4>LOREM IPSUM</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis.</p>
+          </div>
+
+          <div class="col-sm-3 article box">
+            <img class="illustration-avantage" src="photos/Icon-bleu-03.png">
+            <h4>LOREM IPSUM</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="biens">
+      <div class="container">
+        <h2>&mdash; Nos biens &mdash;</h2>
+        <div id="carousel-desktop" class="row justify-content-center">
+          <div id="item" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="0">          
+            <div class="carousel-inner" role="listbox">
+
+              <!--First slide-->
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+
+                  <div class="col-sm-3 neumorphism-2 text-center">           
+                    <h3>Immeuble Marseille</h3>
+                    <img class="photo-bien" src="photos/Bleu-03.png">
+                    <p class="prix">1 230 000€</p>
+                    <p>Rentabilité</p>
+                    <p class="taux">13,40%</p>
+                    <hr>
+                    <p>Financé par 230 investisseurs</p>
+                  </div>
+
+                  <div class="col-sm-3 neumorphism-2 text-center">
+                    <h3>Immeuble Marseille</h3>
+                    <img class="photo-bien" src="photos/Bleu-03.png">
+                    <p class="prix">1 230 000€</p>
+                    <p>Rentabilité</p>
+                    <p class="taux">13,40%</p>
+                    <hr>
+                    <p>Financé par 230 investisseurs</p>
+                  </div>
+
+                  <div class="col-sm-3 neumorphism-2 text-center">
+                    <h3>Immeuble Marseille</h3>
+                    <img class="photo-bien" src="photos/Bleu-03.png">
+                    <p class="prix">1 230 000€</p>
+                    <p>Rentabilité</p>
+                    <p class="taux">13,40%</p>
+                    <hr>
+                    <p>Financé par 230 investisseurs</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!--seconde class-->
+              <div id="float" class="carousel-item">
+                <div class="row justify-content-center">
+
+                  <div class="col-sm-3 neumorphism-2 text-center">           
+                    <h3>Immeuble Paris</h3>
+                    <img class="photo-bien" src="photos/Bleu-03.png">
+                    <p class="prix">1 230 000€</p>
+                    <p>Rentabilité</p>
+                    <p class="taux">13,40%</p>
+                    <hr>
+                    <p>Financé par 230 investisseurs</p>
+                  </div>
+
+                  <div class="col-sm-3 neumorphism-2 text-center">
+                    <h3>Immeuble Paris</h3>
+                    <img class="photo-bien" src="photos/Bleu-03.png">
+                    <p class="prix">1 230 000€</p>
+                    <p>Rentabilité</p>
+                    <p class="taux">13,40%</p>
+                    <hr>
+                    <p>Financé par 230 investisseurs</p>
+                  </div>
+
+                  <div class="col-sm-3 neumorphism-2 text-center">
+                    <h3>Immeuble Paris</h3>
+                    <img class="photo-bien" src="photos/Bleu-03.png">
+                    <p class="prix">1 230 000€</p>
+                    <p>Rentabilité</p>
+                    <p class="taux">13,40%</p>
+                    <hr>
+                    <p>Financé par 230 investisseurs</p>
+                  </div>
+              
+                </div>
+              </div>
+
+              <a class="carousel-control-prev" href="#item" data-slide="prev"><i id="left" class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+              <a class="carousel-control-next" href="#item" data-slide="next"><i id="right" class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--END carousel desktop-->
+
+        <!--Carousel Mobile-->
+        <div id="carousel-mobile" class="row justify-content-center">
+          <div id="item-mobile" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="0">          
+            <div class="carousel-inner" role="listbox">
+
+              <!--first slide-->
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+
+                  <div class="col-sm-3 neumorphism-2 text-center">           
+                    <h3>Immeuble Marseille</h3>
+                    <img class="photo-bien" src="photos/Bleu-03.png">
+                    <p class="prix">1 230 000€</p>
+                    <p>Rentabilité</p>
+                    <p class="taux">13,40%</p>
+                    <hr>
+                    <p>Financé par 230 investisseurs</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!--second slide-->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+
+                  <div class="col-sm-3 neumorphism-2 text-center">           
+                    <h3>Immeuble Paris</h3>
+                    <img class="photo-bien" src="photos/Bleu-03.png">
+                    <p class="prix">1 230 000€</p>
+                    <p>Rentabilité</p>
+                    <p class="taux">13,40%</p>
+                    <hr>
+                    <p>Financé par 230 investisseurs</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!--third slide-->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+
+                  <div class="col-sm-3 neumorphism-2 text-center">           
+                    <h3>Immeuble Lyon</h3>
+                    <img class="photo-bien" src="photos/Bleu-03.png">
+                    <p class="prix">1 230 000€</p>
+                    <p>Rentabilité</p>
+                    <p class="taux">13,40%</p>
+                    <hr>
+                    <p>Financé par 230 investisseurs</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <a class="carousel-control-prev" href="#item-mobile" data-slide="prev"><i id="left" class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+              <a class="carousel-control-next" href="#item-mobile" data-slide="next"><i id="right" class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="hide-illustration-bien" class="row">
+          <div class="col-sm-1">
+            <img id="illustration-bien" src="photos/Bleu-13.png">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="avis">
+      <div class="container">
+        <h2>&mdash; Nos avis &mdash;</h2>
+
+        <div class="row">
+          <div id="multi-item" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="0">           
+          <div class="carousel-inner" role="listbox">
+
+          <!--First slide-->
+          <div class="carousel-item active">
+
+            <div class="row justify-content-center">
+              <div class="col-sm-5 text-center neumorphism-3">
+                <div class="icon-avis"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis.</p>
+                <hr>
+                <p style="font-weight: 700;">Olivier Dupont</p>
+              </div>
+            </div>
+
+          </div>
+          <!--Second slide-->
+          <div class="carousel-item">
+
+            <div class="row justify-content-center">
+              <div class="col-sm-5 text-center neumorphism-3">
+                <div class="icon-avis"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis.</p>
+                <hr>
+                <p style="font-weight: 700;">Marie Durand</p>
+              </div>
+            </div>
+
+          </div>
+          <!--Third slide-->
+          <div class="carousel-item">
+
+            <div class="row justify-content-center">
+              <div class="col-sm-5 text-center neumorphism-3">
+                <div class="icon-avis"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sem sed risus auctor iaculis.</p>
+                <hr>
+                <p style="font-weight: 700;">Pauline Durand</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="arrow" class="row justify-content-center">
+          <div class="col-sm-1 text-center icon">
+            <a class="carousel-control-prev" href="#multi-item" data-slide="prev"><i id="left-arrow" class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+            <a class="carousel-control-next" href="#multi-item" data-slide="next"><i id="right-arrow" class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div id="float-area" class="col-sm-3 align-self-center hide-mobile">
+            <div class="shape-avis"></div>
+          </div> 
+        </div>
+
+        <div class="row">
+          <div id="float-area" class="col-sm-3 align-self-center hide-mobile">
+            <div class="shape-avis-02"></div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section id="partenaire">
+      <div class="container">
+        <h2>&mdash; Nos partenaires &mdash;</h2>
+
+        <div class="row">
+          <img class="illustration-right" src="photos/Bulle-double.png">
+        </div>
+
+        <div class="row justify-content-around ligne">
+          <div class="col-sm-3 rectangle text-center align-self-center">
+            <p>LOREM IPSUM</p>
+          </div>
+
+          <div class="col-sm-3 rectangle text-center">
+            <p>LOREM IPSUM</p>
+          </div>
+
+          <div class="col-sm-3 rectangle text-center">
+            <p>LOREM IPSUM</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-around ligne">
+          <div class="col-sm-3 rectangle text-center">
+            <p>LOREM IPSUM</p>
+          </div>
+
+          <div class="col-sm-3 rectangle text-center">
+            <p>LOREM IPSUM</p>
+          </div>
+
+          <div class="col-sm-3 rectangle text-center">
+            <p>LOREM IPSUM</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-around ligne">
+          <div class="col-sm-3 rectangle text-center">
+            <p>LOREM IPSUM</p>
+          </div>
+
+          <div class="col-sm-3 rectangle text-center">
+            <p>LOREM IPSUM</p>
+          </div>
+
+          <div class="col-sm-3 rectangle text-center">
+            <p>LOREM IPSUM</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <img class="illustration-left" src="photos/Bulle-double-02.png">
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <img src="photos/Bleu-03.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 text-center hide-desktop show-mobile">
+        <a href="#">Simuler le prêt</a>
+        <a href="#">Services</a>
+        <a href="#">Outils</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 hide-mobile">
+        <div class="row"><a href="#">Simuler le prêt</a></div>
+        <div class="row"><a href="#">Services</a></div>
+        <div class="row"><a href="#">Partenaire</a></div>
+      </div>
+
+      <div class="col-sm-4 text-center hide-desktop show-mobile">
+        <p>Contactez-nous</p>
+          <form>
+            <input type="text" name="name" placeholder="Entrez votre email"></input>
+            <button type="submit" name="button">OK</button>
+          </form>
+      </div>
+
+      <div class="col-sm-4 text-center align-self-center">
+        <div id="footer-icon">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="col-sm-4 text-right hide-mobile">
+        <p>Contactez-nous</p>
+        <form>
+          <input type="text" name="name" placeholder="Entrez votre email"></input>
+          <button type="submit" name="button">OK</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
