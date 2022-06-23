@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Balance ton squatteur</title>
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!--Icon-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js"></script>
+
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header id="header">
+    <div class="container">
+    <div class="row" id="over">
+      <div class="col-2">
+        <a href="index.html"><img src="Photos/logo-02.png" alt="logo de Squatteur"></a>
+      </div>
+      <div id="navigator" class="col-10">
+        <nav>
+          <a href="index.html">A propos</a>
+          <a href="#">Nos propositions</a>
+          <a href="#">Nos étapes</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+
+      <div id="nav-mobile" class="col-2">
+          <div id="nav-collapse">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+          <nav id="nav-mobile-collapse">
+            <a href="#">A propos</a>
+            <a href="#">Propositions</a>
+            <a href="#">Etapes</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+
+      <div class="row" id="text">
+        <div class="col-sm-8">
+          <h1>La solution pour votre bien <span>squatté</span></h1>
+          <p>Votre logement est squatté? Nous avons <span>la solution</span></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--MAIN CONTENT-->
+  <main>
+    <section id="presentation">
+      
+        <div class="row" id="block">
+          <div class="col-sm-6">
+            <p>Insécurité, dégradations, démarches administratives coûteuses et fastidieuses, nous avons trouvé la solution. Balance ton squat, un service dédié au rachat de votre bien squatté au meilleur prix</p>
+          </div>
+
+          <div class="col-sm-6" id="image">
+            <img src="Photos/Photo-02.png" alt="Photo de maison">
+          </div>
+        </div>
+      
+    </section>
+
+    <section id="solutions">
+      <div class="container">
+        <h2>Notre proposition de valeur</h2>
+        <div class="row justify-content-center" id="over-02">
+          <div id="rectangle" class="col-sm-2">
+            <h3>Une démarche rapide et efficace</h3>
+            <hr class="line">
+            <p>Obtenez une offre d’achat en moins de 120 heures</p>
+          </div>
+
+          <div id="rectangle" class="col-sm-2">
+            <h3>Le meilleur prix</h3>
+            <br>
+            <hr class="line">
+            <p>Aucun rabais, nous rachetons votre bien au prix fort !</p>
+          </div>
+
+          <div id="rectangle" class="col-sm-2">
+            <h3>Un service de A à Z</h3>
+            <br>
+            <hr class="line">
+            <p>Une libération pour vous, une nouvelle mission pour nous !</p>
+          </div>
+
+          <div id="rectangle" class="col-sm-2">
+            <h3>Un processus digitalisé</h3>
+            <br>
+            <hr class="line">
+            <p>Fort de nos outils big data, nous vous proposerons une réponse rapide adaptée à votre situation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Comment ça fonctionne?</h2>
+        <div class="row contain center">
+
+          <div class="col-sm-4 hide">
+            <img class="icon" src="Photos/Icon-01.png">
+          </div>
+
+          <div class="col-sm-4">
+            <h3>Estimation de votre bien</h3>
+            <p>Une expertise complète établie par nos différents experts permettra de définir la valeur de votre bien au prix fort</p>
+          </div>
+
+          <div class="col-sm-4">
+            <img class="image" src="Photos/Line.png" alt="Line decorated">
+          </div>
+
+          <div class="col-sm-4 hide-02">
+            <img class="icon" src="Photos/Icon-01.png">
+          </div>
+        </div>
+
+        <div class="row contain center">
+          <div class="col-sm-4">
+            <img class="icon" src="Photos/Icon-05.png">
+          </div>
+
+          <div class="col-sm-4">
+            <img class="image" src="Photos/Line.png" alt="Line decorated">
+          </div>
+
+          <div class="col-sm-4">
+            <h3>Signature du compromis</h3>
+            <p>Nous signons le compromis sans condition suspensive, sans condition de prêt bancaire et sans condition d’expulsion. En moins de 3 mois, votre bien squatté sera vendu.</p>
+          </div>
+        </div>
+
+        <div class="row contain center">
+          <div class="col-sm-4 hide">
+            <img class="icon" src="Photos/Icon-02.png">
+          </div>
+
+          <div class="col-sm-4">
+            <h3>Expulsion des squatteurs</h3>
+            <p>Suite à l’achat du bien squatté, nous résoudrons l’ensemble des problèmes administratifs à l’aide de nos partenaires avocats et huissiers. Nous assumons l’entièreté des frais complémentaires durant la période d’expulsion.</p>
+          </div>
+
+          <div class="col-sm-4">
+            <img class="image" src="Photos/Line.png" alt="Line decorated">
+          </div>
+
+          <div class="col-sm-4 hide-02">
+            <img class="icon" src="Photos/Icon-02.png">
+          </div>
+        </div>
+
+        <div class="row contain center">
+          <div class="col-sm-4">
+            <img class="icon-02" src="Photos/Icon-06.png">
+          </div>
+
+          <div class="col-sm-4">
+            <img class="image" src="Photos/Line.png" alt="Line decorated">
+          </div>
+
+          <div class="col-sm-4">
+            <h3>Sécurisation du bien</h3>
+            <p>Nous balisons le bien et protégeons ses accès afin de prévenir toute nouvelle tentative d’intrusion. Nous sécurisons également le bien par alarme afin de dissuader, prémunir la zone de travaux et empêcher le vol et la dégradation de matériel.</p>
+          </div>
+        </div>
+
+        <div class="row contain center">
+          <div class="col-sm-4 hide">
+            <img class="icon" src="Photos/Icon-03.png">
+          </div>
+
+          <div class="col-sm-4">
+            <h3>Mise en place des travaux</h3>
+            <p>Nous confions les travaux à nos artisans de confiance pour une complète remise en état de votre bien.</p>
+          </div>
+
+          <div class="col-sm-4">
+            <img class="image" src="Photos/Line.png" alt="Line decorated">
+          </div>
+
+          <div class="col-sm-4 hide-02">
+            <img class="icon" src="Photos/Icon-03.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div>
+        <div class="row" id="contact-row">
+          
+          <div class="col-sm-4">
+            <p>Une équipe à votre service</p>
+          </div>
+
+          <div class="col-sm-8">
+            <form>
+              <input type="text" name="name" placeholder="Entrez votre email"></input>
+              <button type="submit" name="button">Envoyer</button>
+            </form>
+          </div>
+
+        </div>
+    </section>
+
+    <section id="partenaires">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="Photos/logo-02.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-7">
+          <nav>
+            <a href="index.html">A propos</a>
+            <a href="#">Nos propositions</a>
+            <a href="#">Nos étapes</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+
+        <div class="col-sm-5">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
