@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simuler le prêt</title>
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--Icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="style-04.css" />
+  <script src="script.js"></script>
+
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <div id="background-col-1" class="col-sm-3">
+          <div class="row justify-content-center">
+            <img id="logo" src="photos/logo-04.png">
+          </div>
+
+          <div id="titre" class="row text-center">
+            <div class="col-sm-12"><p style="font-size: 3rem;">#4</p></div>
+            <div class="col-sm-12"><p style="font-size: 3rem; color:#FF822E;">SITUATION FINANCIERE</p></div>
+          </div>
+
+          <div class="row justify-content-center">
+            <img id="illustration" src="photos/Etape-01.png">
+          </div>
+        </div>
+
+        <div id="background-col-2" class="col-sm-9">
+          <div class="row justify-content-end">
+            <a id=connexion href="#">CONNEXION</a>
+          </div>
+
+          <div class="row justify-content-center">
+            <img id="hide" src="photos/timeline-06.png">
+          </div>
+
+          <div class="row justify-content-center">
+            <img id="hide-02" src="photos/Timeline-court.png">
+          </div>
+
+          <div class="row">
+            <div id="hide-04" class="col-sm-12"><p>SITUATION FINANCIERE</p></div>
+          </div>
+
+          <div id="hide-03" class="row text-center">
+            <div class="col-sm-3"><p>Projet</p></div>
+            <div class="col-sm-3"><p>Situation personnelle</p></div>
+            <div class="col-sm-3"><p>Situation pro</p></div>
+            <div class="col-sm-3"><p>Situation financière</p></div>
+          </div>
+
+          <div id="formulaire" class="row justify-content-center">
+            <div class="form-group col-sm-8">
+              <label for="Salaire">Votre salaire net mensuel</label>
+              <input type="text" class="form-control" id="Salaire" placeholder="1800">
+            </div>
+
+            <div class="col-sm-2 align-self-end">
+              <p>€ / mois</p>
+            </div>
+
+            <div class="form-group col-sm-8">
+              <label for="Apport">Votre apport</label>
+              <input type="text" class="form-control" id="Apport" placeholder="50 000">
+            </div>
+
+            <div class="col-sm-2 align-self-end">
+              <p>€</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center sous-titre">
+            <div class="col-sm-8"><p>Avez-vous d'autres crédit en cours?</p></div>
+          </div>
+
+          <div class="row radio">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault">
+              <label class="form-check-label" for="flexRadioDefault1">Oui</label>
+            </div>
+          </div>
+
+          <div class="row radio">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault">
+              <label class="form-check-label" for="flexRadioDefault1">Non</label>
+            </div>
+          </div>
+
+          <div class="row justify-content-end">
+            <img id="line" src="photos/Illustration-simuler.png">
+          </div>
+
+          <div id="button" class="row justify-content-end">
+            <div id="retour" class="col-sm-2 text-right"><a href="Simuler-03.html"><button type="submit" name="button">Retour</button></a></div>
+            <div id="valider" class="col-sm-2"><a href="Resultat.html"><button type="submit" name="button">Valider</button></a></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+</body>

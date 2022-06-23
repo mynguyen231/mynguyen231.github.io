@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simuler le prêt</title>
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--Icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="resultat.css" />
+
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="resultat.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <div id="background-col-1" class="col-sm-3">
+          <div class="row justify-content-center">
+            <img id="logo" src="photos/logo-04.png">
+          </div>
+
+          <div id="simulation">
+            <div class="row">
+              <div class="col-sm-12 nom"><label for="customRange" class="form-label">Durée d'emprunt (ans)</label></div>
+              <div class="col-sm-12 range-wrap">
+                <div class="range-value" id="rangeV"></div>
+                <input id="range" type="range" class="range" min="15" max="25" step="5">
+              </div>
+            </div>
+
+            <div id="mensualité" class="row">
+              <div class="col-sm-12 nom"><label for="customRange2" class="form-label">Mensualité (€/mois) </label></div>
+              <div class="col-sm-12 range-wrap">
+                <div class="range-value" id="rangeV2"></div>
+                <input id="range2" type="range" class="range" min="500" max="2000" step="25">
+              </div>
+            </div>
+
+            <div id="apport" class="row">
+              <div class="col-sm-6 nom"><p>Votre apport</p></div>
+              <div class="form-group col-sm-6 nom">
+                <input type="text" class="form-control" id="Apport" placeholder="50 000€">
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <img id="illustration" src="photos/Etape-01.png">
+          </div>
+        </div>
+
+        <div id="background-col-2" class="col-sm-9">
+
+          <div class="row justify-content-end">
+            <div id="modification" class="col-sm-3 text-right"><i class="fa fa-pencil" aria-hidden="true"></i> <a href="#">Modifier ma simulation</a></div>
+            <div id="connexion" class="col-sm-2 text-center"><a href="#">CONNEXION</a></div>
+          </div>
+
+          <div id="border" class="row justify-content-center">
+            <div class="col-sm-10 text-center"><p style="font-size: 2.5rem; font-weight: 500">VOTRE CAPACITE D'ACHAT</p></div>
+            <div class="col-sm-10 text-center"><p style="font-size: 3rem; font-weight: 500; color: #75D5FD">195K€ - 215K€</p></div>
+            <div class="col-sm-10" id="recapitulatif-toggle" onclick="toggleDisplay()"><p style="font-size: 1.3rem; color: #F2C7AA;">Voir le récapitulatif <i class="fa fa-chevron-down" aria-hidden="true"></i></p></div>
+<!--Récapitulatif-->
+            <div id="recapitulatif" class="row justify-content-center">
+
+              <div id="colonne-01" class="col-sm-5">
+
+                <div class="row justify-content-center"><p style="text-decoration-line: underline;">PROJET</p></div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p>Prix</p>
+                    <p>Frais 1</p>
+                    <p>Frais 2</p>
+                    <p>Frais 3</p>
+                    <p>Apport</p>
+                    <p>Montant</p>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <p>250K €</p>
+                    <p>1K €</p>
+                    <p>1,2K €</p>
+                    <p>800 €</p>
+                    <p>20K €</p>
+                    <p>233K €</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-sm-5">
+
+                <div class="row justify-content-center"><p style="text-decoration-line: underline;">PRÊT</p></div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p>Durée</p>
+                    <p>Mensualité</p>
+                    <p>Taux</p>
+                    <p>Coût</p>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <p>25 ans</p>
+                    <p>700 €</p>
+                    <p>1,83%</p>
+                    <p>30K €</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+<!--Récapitulatif mobile-->
+            <div id="mobile" class="row">
+              <div class="row"><p>PROJET</p></div>
+              <div class="row">
+
+                <div id="text" class="col-sm-6 text-center">
+                  <p>Prix</p>
+                  <p>Frais 1</p>
+                  <p>Frais 2</p>
+                  <p>Frais 3</p>
+                  <p>Apport</p>
+                  <p>Montant</p>
+                </div>
+
+                <div id="chiffre" class="col-sm-6 text-center">
+                  <p>250K €</p>
+                  <p>1K €</p>
+                  <p>1,2K €</p>
+                  <p>800 €</p>
+                  <p>20K €</p>
+                  <p>233K €</p>
+                </div>
+
+              </div>
+              <div class="row"><p>PRÊT</p></div>
+              <div class="row">
+
+                <div id="text" class="col-sm-6 text-center">
+                  <p>Durée</p>
+                  <p>Mensualité</p>
+                  <p>Taux</p>
+                  <p>Coût</p>
+                </div>
+
+                <div id="chiffre" class="col-sm-6 text-center">
+                  <p>25 ans</p>
+                  <p>700 €</p>
+                  <p>1,83%</p>
+                  <p>30K €</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="button" class="row justify-content-end">
+            <div id="retour" class="col-sm-2 text-right"><a href="Simuler-04.html"><button type="submit" name="button">Retour</button></a></div>
+            <div id="imprimer" class="col-sm-2"><button type="submit" name="button">Imprimer</button></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
