@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banquo</title>
+  <script></script>
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--Icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <script src="script.js"></script>
+
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Vendor CSS Files-->
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/js/carausol_slider.js"></script>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!--HEADER-->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <a href="index.html"><img id="logo" src="photos/logo-04.png" alt="logo de Banquo"></a>
+        </div>
+
+        <div id="navigator" class="col-10">
+          <nav>
+            <a href="#">Simuler</a>
+            <a href="#">Services</a>
+            <!--<a href="#">Outils</a>-->
+            <a href="#">Partenaires</a>
+            <a href="#">Connexion</a>
+          </nav>
+        </div>
+
+        <div id="nav-mobile" class="col-2">
+          <div id="nav-collapse">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+          <nav id="nav-mobile-collapse">
+            <a href="#">Simuler</a>
+            <a href="#">Services</a>
+            <!--<a href="#">Outils</a>-->
+            <a href="#">Partenaires</a>
+            <a href="#">Connexion</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>
+            Découvrez le plaisir <span style="height:60px;display: block;" class="typed-strings" ><span>
+          </h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-5">
+          <p>Banquo, le pouvoir de l’IA au service du prêt immobilier.</p>
+          <a href="Simuler-01.html"><button type="submit" name="button">Simuler votre prêt</button></a>
+        </div>
+
+        <div class="col-sm-7">
+          <img id="couverture" src="photos/Couverture.png" alt="photo de couverture">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="categories">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-1 align-self-center text-center categorie">
+            <img class="icon" src="photos/Icon-04.png">
+          </div>
+          <div class="col-sm-2 text-categorie">
+            <p style="font-weight:bold">INTELLIGENCE ARTIFICIELLE</p>
+            <p>Notre intelligence artificielle vous trouve les meilleures banques en fonction de votre projet immobilier.</p>
+          </div>
+
+          <div class="col-sm-1 align-self-center text-center categorie">
+            <img class="icon" src="photos/Icon-05.png">
+          </div>
+          <div class="col-sm-2 text-categorie">
+            <p style="font-weight:bold">GAIN DE TEMPS</p>
+            <br>
+            <p>Votre temps est précieux, et nous le savons. Nous nous occupons de tout afin de vous faire économiser x heures.</p>
+          </div>
+
+          <div class="col-sm-1 align-self-center text-center categorie">
+            <img class="icon" src="photos/Icon-06.png">
+          </div>
+          <div class="col-sm-2 text-categorie">
+            <p style="font-weight:bold">RELATIONS PRIVILÉGIÉES</p>
+            <br>
+            <p>Simple, fluide, direct, sans obstacles : entrer directement en contact à vos conseillers bancaires</p>
+          </div>
+
+          <div class="col-sm-1 align-self-center text-center categorie">
+            <img class="icon" src="photos/Icon-07.png">
+          </div>
+          <div class="col-sm-2 text-categorie">
+            <p style="font-weight:bold">FAITES DES ÉCONOMIES</p>
+            <br>
+            <p>Une approche digitalisée vous permettant d’économiser plus de <br>5 000€</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Nos services</h2>
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-sm-5 hide text-center">
+            <img class="etape" src="photos/Etape-01.png">
+          </div>
+
+          <div class="col-sm-5 align-self-center">
+            <h3>Montage du dossier</h3>
+            <p style="margin-bottom:20px">Seulement quelques informations seront nécessaires pour la création de votre dossier, afin que nos experts puissent le présenter aux banques les plus pertinentes</p>
+          </div>
+
+          <div class="col-sm-2 align-self-center text-center hide-chiffre">
+            <p class="chiffre">#1</p>
+          </div>
+
+          <div class="col-sm-5 hide-02 text-center">
+            <img class="etape" src="photos/Etape-01.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <img class="line" src="photos/Line-01.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 text-center">
+            <img class="etape" src="photos/Etape-02.png">
+          </div>
+
+          <div class="col-sm-2 align-self-center text-center hide-chiffre">
+            <p class="chiffre">#2</p>
+          </div>
+
+          <div class="col-sm-5 align-self-center">
+            <h3>Prise de rendez-vous</h3>
+            <p style="margin-bottom:20px">Grâce à notre intelligence artificielle, nous vous trouverons les banques les plus pertinentes. Nous nous occuperons d’organiser vos rendez-vous</p>
+          </div>  
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <img class="line" src="photos/Line-02.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 hide text-center">
+            <img class="etape" src="photos/Etape-03.png">
+          </div>
+
+          <div class="col-sm-5 align-self-center">
+            <h3>À vous de jouer</h3>
+            <p style="margin-bottom:20px">Augmenter vos chances de réussite en suivant les conseils et astuces de nos expert</p>
+          </div>
+
+          <div class="col-sm-2 align-self-center text-center hide-chiffre">
+            <p class="chiffre">#3</p>
+          </div>
+
+          <div class="col-sm-5 hide-02 text-center">
+            <img class="etape" src="photos/Etape-03.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <img class="line" src="photos/Line-01.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 text-center">
+            <img class="etape" src="photos/Etape-04.png">
+          </div>
+
+          <div class="col-sm-2 align-self-center text-center hide-chiffre">
+            <p class="chiffre">#4</p>
+          </div>
+
+          <div class="col-sm-5 align-self-center">
+            <h3>Un suivi de A à Z</h3>
+            <p>Nos experts en crédit assurent un suivi régulier et efficace jusqu’à l’émission de votre offre de prêt</p>
+          </div>  
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <img class="line" src="photos/Line-02.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 hide text-center">
+            <img class="etape" src="photos/Etape-05.png">
+          </div>
+
+          <div class="col-sm-5 align-self-center">
+            <h3>Signature du prêt</h3>
+            <p style="margin-bottom:20px">Votre offre de prêt est éditée ! Félicitations, vous êtes enfin propriétaire !</p>
+          </div>
+
+          <div class="col-sm-2 align-self-center text-center hide-chiffre">
+            <p class="chiffre">#5</p>
+          </div>
+
+          <div class="col-sm-5 hide-02 text-center">
+            <img class="etape" src="photos/Etape-05.png">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--<section id="outils">
+      <h2>Lorem ipsum</h2>
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-sm-1 align-self-end">
+            <img id="left-illustration" src="photos/Illustration-02.png">
+          </div>
+
+          <div class="col-sm-3 block">
+            <h3>LOREM IPSUM</h3>
+            <hr class="hr">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, bergren, no sea takimata sanctus est Lorem ipsum dolor sit</p>
+          </div>
+
+          <div class="col-sm-3 block">
+            <h3>LOREM IPSUM</h3>
+            <hr class="hr">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, bergren, no sea takimata sanctus est Lorem ipsum dolor sit</p>
+          </div>
+
+          <div class="col-sm-3 block">
+            <h3>LOREM IPSUM</h3>
+            <hr class="hr">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, bergren, no sea takimata sanctus est Lorem ipsum dolor sit</p>
+          </div>
+
+          <div class="col-sm-1 align-self-end">
+            <img id="right-illustration" src="photos/Illustration-01.png">
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <section id="partenaires">
+      <h2>Nos partenaires</h2>
+      <div id="background">
+      <div class="container">
+        <div id="row-01" class="row justify-content-center">
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/BNP.png" alt="Logo BNP">
+          </div>
+
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/Caisse-epargne.png" alt="Logo Caisse Epargne">
+          </div>
+
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/SG.png" alt="Logo SG">
+          </div>
+
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/Populaire.png" alt="Logo Banque Populaire">
+          </div>
+        </div>
+
+        <div id="row-02" class="row justify-content-center">
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/credit-agricole.png" alt="Logo Credit agricole">
+          </div>
+
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/credit-nord.png" alt="Logo Credit du Nord">
+          </div>
+
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/credit-mutuel.png" alt="Logo Credit Mutuel">
+          </div>
+
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/HSBC.png" alt="Logo HSBC">
+          </div>
+        </div>
+
+        <div id="row" class="row justify-content-center">
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/AXA.png" alt="Logo AXA">
+          </div>
+
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/LCL.png" alt="Logo LCL">
+          </div>
+
+          <div class="col-sm-2 rectangle text-center">
+            <img class="partenaire" src="photos/CIC.png" alt="Logo CIC">
+          </div>
+
+          <div class="col-sm-2 rectangle">
+          
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--<section id="avis">
+      <h2>Avis de clients</h2>
+      <div class="container">  
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <img id="quote-01" src="photos/quotes-01.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <div id="multi-item" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="0">            
+          <div id="overflow" class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-sm-3 text-center align-self-center text hide-04">
+                  <p></p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <p style="font-size: 1.1rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                  <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                </div>
+      
+                <div class="col-sm-3 text-center align-self-center text hide-04">
+                  <p></p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <p style="font-size: 1.3rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                  <p style="font-weight: 600">Jacques Dumont - Marseille</p>
+                </div>
+
+                <div class="col-sm-3 text-center align-self-center text hide-04">
+                  <p></p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <p style="font-size: 1.1rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                  <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                </div>     
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-sm-3 text-center align-self-center text hide-04">
+                  <p></p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <p style="font-size: 1.1rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                  <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                </div>
+      
+                <div class="col-sm-3 text-center align-self-center text hide-04">
+                  <p></p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <p style="font-size: 1.3rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                  <p style="font-weight: 600">Jacques Dumont - Marseille</p>
+                </div>
+
+                <div class="col-sm-3 text-center align-self-center text hide-04">
+                  <p></p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <p style="font-size: 1.1rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                  <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                </div>              
+              </div> 
+            </div>
+      
+            <div class="carousel-item">       
+              <div class="row justify-content-center">
+                <div class="col-sm-3 text-center align-self-center text hide-04">
+                  <p></p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <p style="font-size: 1.1rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                  <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                </div>
+      
+                <div class="col-sm-3 text-center align-self-center text hide-04">
+                  <p></p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <p style="font-size: 1.3rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                  <p style="font-weight: 600">Jacques Dumont - Marseille</p>
+                </div>
+
+                <div class="col-sm-3 text-center align-self-center text hide-04">
+                  <p></p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <p style="font-size: 1.1rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                  <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                </div>              
+              </div>     
+            </div>
+
+          </div>
+            <a class="carousel-control-prev" href="#multi-item" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+            <a class="carousel-control-next" href="#multi-item" data-slide="next"><i class="fa fa-chevron-right"></i></a>    
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <img id="quote-02" src="photos/quotes-02.png">
+          </div>
+        </div>
+
+      </div>
+    </section>-->
+
+    <!--Nouveau carousel-->
+    <section id="avis" class="carousel_se_01">
+      <h2 id="h2-avis">Avis de clients</h2>
+        <div class="container-fluid px-0 py-5">
+          <div class="container pt-5">
+            <div class="row">
+              <div class="col-md-12 px-0 pt-5">
+                <div class="col-md-12 px-0 p-t-30">
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
+                      <img id="quote-01" src="photos/quotes-01.png">
+                    </div>
+                  </div>
+                  <div class="owl-carousel carousel_se_01_carousel owl-theme">
+                    
+                    <div class="item">
+                      <div class="col-md-12 text-center align-self-center text">
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <p style="font-size: 1.1rem">Avis 1 dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                        <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                      </div>
+                    </div>
+  
+                    
+                    <div class="item">
+                      <div class="col-md-12 text-center align-self-center text">
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <p style="font-size: 1.1rem">Avis 2 dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                        <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                      </div>
+                    </div>
+  
+                    
+                    <div class="item">
+                      <div class="col-md-12 text-center align-self-center text">
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <p style="font-size: 1.1rem">Avis 3 dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                        <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                      </div>
+                    </div>
+  
+                    
+                    <div class="item">
+                      <div class="col-md-12 text-center align-self-center text">
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <p style="font-size: 1.1rem">Avis 4 dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                        <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="col-md-12 text-center align-self-center text">
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <p style="font-size: 1.1rem">Avis 5 dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
+                        <p style="font-weight: 600; font-size: 1.1rem">Jacques Dumont - Marseille</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
+                      <img id="quote-02" src="photos/quotes-02.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <img src="photos/logo-04.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 text-center hide">
+          <a href="#">Simuler le prêt</a>
+          <a href="#">Services</a>
+          <a href="#">Outils</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 hide-02">
+          <div class="row"><a href="#">Simuler le prêt</a></div>
+          <div class="row"><a href="#">Services</a></div>
+          <div class="row"><a href="#">Partenaire</a></div>
+        </div>
+
+        <div class="col-sm-4 text-center hide">
+          <p>Contactez-nous</p>
+          <form>
+            <input type="text" name="name" placeholder="Entrez votre email"></input>
+            <button type="submit" name="button">OK</button>
+          </form>
+        </div>
+
+        <div class="col-sm-4 text-center align-self-center">
+          <div id="footer-icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="col-sm-4 text-right hide-04">
+          <p>Contactez-nous</p>
+          <form>
+            <input type="text" name="name" placeholder="Entrez votre email"></input>
+            <button type="submit" name="button">OK</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+</body>
