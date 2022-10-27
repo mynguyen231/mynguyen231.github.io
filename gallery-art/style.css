@@ -1,0 +1,303 @@
+/*GLOBAL */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bree Serif";
+  font-size: 1.8rem;
+  line-height: 2;
+  margin: 0;
+  color: black;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  color: #B1040A;
+}
+
+h1:before, h1:after, h2:before, h2:after {
+  content: " - "
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(153,153,153,0.1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease 0s; 
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  padding: 50px;
+}
+
+header a:hover {
+  -webkit-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  color: #B1040A;
+}
+
+
+header img {
+  width: 170px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  display: inline-block;
+  color: black;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav a i {
+  display: block!important;
+  padding: 10px;
+}
+
+/* MAIN */
+section a {
+  padding: 10px 20px;
+}
+
+#presentation {
+  background: url(img/fond.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 100px 75px;
+}
+
+.cta, section a:hover {
+  background: #B1040A;
+  color: white;
+  border-radius: 5px;
+}
+
+#expositions, #histoire {
+  margin: 100px 0;
+}
+
+#expositions {
+  text-align: center;
+}
+
+#expositions h3 {
+  margin: 0;
+  font-size: 3rem;  
+  color: black;
+}
+
+.image, .apropos {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  margin: 0;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.apropos i {
+  font-size: 2.5rem;
+  background-color: #dadada;
+  border: 2px solid #dadada;
+  color: black;
+  width: 75px;
+  height: 75px;
+  line-height: 69px;
+  border-radius: 50%;
+}
+
+#contact p, #resume div {
+  margin: 25px;
+}
+
+#resume img {
+  width: 50%;
+}
+
+#resume article:nth-of-type(even) img {
+  float: left;
+  margin-right: 25px;
+}
+
+#resume article:nth-of-type(odd) img {
+  float: right;
+  margin-left: 25px;
+}
+
+/* Formulaire */
+form {
+  text-align: center;
+}
+
+input, textarea {
+  padding: 20px 20px 20px 70px;
+  margin: 1%;
+  color: #666;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-family: Arial;
+  font-size: 1.6rem;
+}
+
+input {
+  width: 48%;
+  float: left;
+}
+
+
+input:first-child {
+  background-image: url(img/user.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 10px;
+}
+
+input:nth-of-type(2) {
+  background-image: url(img/mail.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 10px;
+}
+
+textarea {
+  width: 98%;
+  resize: none;
+  background-image: url(img/message.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 10px;
+}
+
+button {
+  margin: 25px 0;
+  padding: 15px 25px;
+  border: 0;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #B1040A;
+}
+
+button[type="reset"] {
+  background-color: black;
+}
+
+/* FOOTER */
+footer {
+
+  box-shadow: 0 0 25px grey;
+  padding: 30px;
+  text-align: center;
+}
+
+footer ul li {
+  padding: 10px;
+  display: inline-block;
+}
+
+footer ul li a {
+  color: #B1040A;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: black ;
+}
+
+/*version tablette*/
+@media screen and (max-width: 1024px) {
+  header {
+    text-align: center;
+  }
+
+  nav {
+    float: none;
+  }
+
+  main {
+    padding: 25px;
+  }
+
+  .image, .apropos {
+    display: block;
+    width: 100%;
+  }
+
+  .image + .image, .apropos + .apropos {
+    margin-top: 80px;
+  }
+}
+/*version mobile*/
+@media screen and (max-width: 767px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  #presentation {
+    background-position: top left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .image img {
+    width: 70%;
+  }
+
+  #resume article:nth-child(even) img, #resume article:nth-child(odd) img {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  input {
+    float: none;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+}
+
